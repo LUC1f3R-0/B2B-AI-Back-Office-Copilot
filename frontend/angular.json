@@ -63,6 +63,9 @@
         },
         "serve": {
           "builder": "@angular/build:dev-server",
+          "options": {
+            "allowedHosts": ["saas.test"]
+          },
           "configurations": {
             "production": {
               "buildTarget": "frontend:build:production"
