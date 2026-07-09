@@ -1,0 +1,9 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/SaaSPlatform.Api/SaaSPlatform.Api.csproj" />
+    <Project Path="src/SaaSPlatform.Application/SaaSPlatform.Application.csproj" />
+    <Project Path="src/SaaSPlatform.Domain/SaaSPlatform.Domain.csproj" />
+    <Project Path="src/SaaSPlatform.Infrastructure/SaaSPlatform.Infrastructure.csproj" />
+    <Project Path="src/SaaSPlatform.Shared/SaaSPlatform.Shared.csproj" />
+  </Folder>
+</Solution>
