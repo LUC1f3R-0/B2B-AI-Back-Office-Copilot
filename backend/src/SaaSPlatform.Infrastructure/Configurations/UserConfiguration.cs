@@ -12,26 +12,23 @@ public class UserConfiguration : IEntityTypeConfiguration<User>
         builder.ToTable("users");
 
         builder.HasKey(x => x.Id);
-
         builder.Property(x => x.Id)
         .HasColumnName("id");
 
         builder.Property(x => x.UserUuid)
         .HasColumnName("user_uuid")
         .IsRequired();
-
         builder.HasIndex(x => x.UserUuid)
         .IsUnique();
 
         builder.Property(x => x.FullName)
         .HasColumnName("full_name")
         .HasMaxLength(150);
-
+        
         builder.Property(x => x.Email)
         .HasColumnName("email")
         .HasMaxLength(255)
         .IsRequired();
-
         builder.HasIndex(x => x.Email)
         .IsUnique();
 
